@@ -263,17 +263,16 @@ textarea {
 .hero-logo-plate {
   width: fit-content;
   display: block;
-  padding: 8px;
+  padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  background: #111614;
+  background: rgba(17, 22, 20, 0.72);
   box-shadow: 0 22px 42px rgba(0, 0, 0, 0.28);
 }
 
 .hero-logo {
-  width: min(280px, 72vw);
+  width: min(300px, 72vw);
   height: auto;
-  border-radius: 5px;
 }
 
 .eyebrow {
@@ -985,7 +984,7 @@ textarea:focus {
 
 .footer-logo-wrap {
   width: 220px;
-  height: 146px;
+  height: 140px;
   display: block;
   overflow: hidden;
   border-radius: 8px;
@@ -1171,7 +1170,7 @@ textarea:focus {
   }
 
   .hero-logo {
-    width: min(228px, 70vw);
+    width: min(232px, 70vw);
   }
 
   .hero-actions,

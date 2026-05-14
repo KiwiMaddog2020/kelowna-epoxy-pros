@@ -24,16 +24,16 @@ const finishes = {
   stone: {
     title: "Light Stone",
     description: "A brighter finish that helps a garage or basement feel cleaner without turning every mark into the first thing you notice.",
-    webp: "assets/garage-floor.webp",
-    image: "assets/garage-floor.png",
+    webp: "assets/garage-floor-swatch.webp",
+    image: "assets/garage-floor-swatch.png",
     alt: "Light stone epoxy floor finish",
     caption: "Good for garages, basements, laundry spaces, and cleaner storage rooms."
   },
   commercial: {
     title: "Commercial Gray",
     description: "A practical, harder-working direction for shops, service areas, storage rooms, and small commercial spaces.",
-    webp: "assets/shop-floor.webp",
-    image: "assets/shop-floor.png",
+    webp: "assets/shop-floor-swatch.webp",
+    image: "assets/shop-floor-swatch.png",
     alt: "Commercial gray epoxy floor finish",
     caption: "Built for work areas where cleaning, traffic, and utility matter."
   }
