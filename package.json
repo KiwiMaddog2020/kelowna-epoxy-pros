@@ -1,0 +1,10 @@
+{
+  "name": "jeff-epoxy-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:assets": "node scripts/generate-assets.mjs",
+    "audit:copy": "node scripts/audit-copy.mjs"
+  }
+}
