@@ -107,7 +107,7 @@ document.querySelectorAll(".faq-question").forEach((button) => {
 if (quoteForm && formNote) {
   quoteForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Thanks. The form is not connected yet, so please call or email for now.";
+    formNote.textContent = "Thanks. Final contact details will be added before launch.";
     formNote.setAttribute("role", "status");
   });
 }
