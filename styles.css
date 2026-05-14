@@ -222,6 +222,8 @@ textarea {
   position: relative;
   min-height: 78svh;
   padding: 104px 0 54px;
+  background:
+    linear-gradient(135deg, #101513 0%, #151b19 48%, #202926 100%);
   color: var(--white);
   overflow: hidden;
 }
@@ -238,14 +240,16 @@ textarea {
       url("assets/hero-garage.webp") type("image/webp"),
       url("assets/hero-garage.png") type("image/png")
     )
-    center / cover no-repeat;
+    right center / min(68vw, 980px) auto no-repeat;
+  opacity: 0.46;
   transform: scale(1.01);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(17, 22, 20, 0.92) 0%, rgba(17, 22, 20, 0.72) 42%, rgba(17, 22, 20, 0.22) 100%),
-    linear-gradient(0deg, rgba(17, 22, 20, 0.38), rgba(17, 22, 20, 0.08));
+    radial-gradient(circle at 78% 48%, rgba(22, 124, 147, 0.12), transparent 28%),
+    linear-gradient(90deg, rgba(17, 22, 20, 0.96) 0%, rgba(17, 22, 20, 0.9) 42%, rgba(17, 22, 20, 0.6) 100%),
+    linear-gradient(0deg, rgba(17, 22, 20, 0.62), rgba(17, 22, 20, 0.18));
 }
 
 .hero-inner {
@@ -256,11 +260,20 @@ textarea {
   gap: 14px;
 }
 
+.hero-logo-plate {
+  width: fit-content;
+  display: block;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: #111614;
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.28);
+}
+
 .hero-logo {
   width: min(280px, 72vw);
   height: auto;
-  border-radius: 8px;
-  filter: drop-shadow(0 20px 36px rgba(0, 0, 0, 0.34));
+  border-radius: 5px;
 }
 
 .eyebrow {
@@ -467,7 +480,7 @@ textarea {
 
 .service-card picture {
   display: block;
-  aspect-ratio: 1.18;
+  aspect-ratio: 1.95;
   overflow: hidden;
 }
 
@@ -475,6 +488,7 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 82%;
 }
 
 .service-card-body {
@@ -835,7 +849,7 @@ textarea {
 .quote-section {
   padding: 108px 0;
   background-image:
-    linear-gradient(120deg, rgba(21, 26, 25, 0.96), rgba(34, 43, 41, 0.92)),
+    linear-gradient(120deg, rgba(21, 26, 25, 0.98), rgba(34, 43, 41, 0.96)),
     image-set(
       url("assets/finish-flake.webp") type("image/webp"),
       url("assets/finish-flake.png") type("image/png")
@@ -1078,10 +1092,16 @@ textarea:focus {
     padding: 96px 0 40px;
   }
 
+  .hero-media {
+    background-position: right top;
+    background-size: 136vw auto;
+    opacity: 0.28;
+  }
+
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(17, 22, 20, 0.94), rgba(17, 22, 20, 0.62)),
-      linear-gradient(0deg, rgba(17, 22, 20, 0.35), rgba(17, 22, 20, 0.16));
+      linear-gradient(90deg, rgba(17, 22, 20, 0.96), rgba(17, 22, 20, 0.86)),
+      linear-gradient(0deg, rgba(17, 22, 20, 0.56), rgba(17, 22, 20, 0.32));
   }
 
   .hero h1 {
