@@ -236,17 +236,15 @@ textarea {
 
 .hero-media {
   background:
-    image-set(
-      url("assets/hero-clean-texture.webp") type("image/webp"),
-      url("assets/hero-clean-texture.png") type("image/png")
-    )
-    center bottom / cover no-repeat;
+    radial-gradient(ellipse 64% 54% at 74% 38%, rgba(112, 139, 128, 0.18) 0%, rgba(46, 69, 64, 0.08) 42%, rgba(17, 22, 20, 0) 72%),
+    radial-gradient(circle at 16% 18%, rgba(192, 151, 82, 0.08) 0%, rgba(17, 22, 20, 0) 30%),
+    linear-gradient(135deg, #0e1412 0%, #121816 52%, #16211e 100%);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(17, 22, 20, 0.7) 0%, rgba(17, 22, 20, 0.48) 48%, rgba(17, 22, 20, 0.22) 100%),
-    linear-gradient(0deg, rgba(17, 22, 20, 0.42), rgba(17, 22, 20, 0.12));
+    linear-gradient(90deg, rgba(14, 20, 18, 0.56) 0%, rgba(14, 20, 18, 0.36) 48%, rgba(14, 20, 18, 0.2) 100%),
+    linear-gradient(0deg, rgba(14, 20, 18, 0.26), rgba(14, 20, 18, 0.04));
 }
 
 .hero-inner {
@@ -1087,14 +1085,16 @@ textarea:focus {
   }
 
   .hero-media {
-    background-position: center bottom;
-    background-size: cover;
+    background:
+      radial-gradient(ellipse 86% 48% at 78% 26%, rgba(112, 139, 128, 0.16) 0%, rgba(46, 69, 64, 0.07) 44%, rgba(17, 22, 20, 0) 74%),
+      radial-gradient(circle at 18% 14%, rgba(192, 151, 82, 0.06) 0%, rgba(17, 22, 20, 0) 34%),
+      linear-gradient(135deg, #0e1412 0%, #121816 56%, #16201d 100%);
   }
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(17, 22, 20, 0.82), rgba(17, 22, 20, 0.62)),
-      linear-gradient(0deg, rgba(17, 22, 20, 0.5), rgba(17, 22, 20, 0.2));
+      linear-gradient(90deg, rgba(14, 20, 18, 0.68), rgba(14, 20, 18, 0.46)),
+      linear-gradient(0deg, rgba(14, 20, 18, 0.32), rgba(14, 20, 18, 0.08));
   }
 
   .hero h1 {

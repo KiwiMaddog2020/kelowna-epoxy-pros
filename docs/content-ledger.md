@@ -26,7 +26,7 @@ Use this file to replace placeholders before launch.
 | Address | Kelowna, BC | Confirmed service area wording |
 | Warranty | Written care guidance | Confirmed warranty language |
 | Testimonials | Process-based trust content | Real customer quotes |
-| Images | Generated finish placeholders, cropped swatches, clean hero texture, social preview card, and optimized WebP copies | Jeff's real job photos |
+| Images | Generated finish placeholders, cropped swatches, CSS hero gradient, social preview card, and optimized WebP copies | Jeff's real job photos |
 | Logo | Supplied PNG logos plus a cleaned transparent website version | Vector master if available |
 
 ## Photo Shot List
