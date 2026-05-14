@@ -252,7 +252,9 @@ textarea {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   display: grid;
+  justify-items: center;
   gap: 14px;
+  text-align: center;
 }
 
 .hero-logo-plate {
@@ -291,12 +293,13 @@ textarea {
 
 .hero h1 {
   max-width: 800px;
+  margin: 0 auto;
   font-size: 56px;
 }
 
 .hero-copy {
   max-width: 660px;
-  margin: 0;
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.86);
   font-size: 19px;
 }
@@ -304,6 +307,7 @@ textarea {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
