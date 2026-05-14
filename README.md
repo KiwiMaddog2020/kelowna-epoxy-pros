@@ -2,6 +2,8 @@
 
 Static preview site for a new Kelowna-based epoxy flooring business.
 
+Live site: https://kiwimaddog2020.github.io/kelowna-epoxy-pros/
+
 ## Current Assumptions
 
 - Brand name from supplied logo: `Kelowna Epoxy Pros`
