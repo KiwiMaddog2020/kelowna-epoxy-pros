@@ -704,12 +704,17 @@ textarea {
 }
 
 .proof-list {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   gap: 12px;
 }
 
 .proof-list article {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
   padding: 22px;
   border-left: 3px solid var(--copper);
   background: var(--paper-strong);
@@ -990,7 +995,7 @@ textarea:focus {
 
   .service-grid,
   .proof-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .process-layout,
