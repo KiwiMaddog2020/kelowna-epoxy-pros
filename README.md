@@ -22,7 +22,7 @@ No build step is required. The site uses plain HTML, CSS, JavaScript, and local 
 - `index.html`: single-page marketing site
 - `styles.css`: visual system and responsive layout
 - `script.js`: navigation, before/after slider, FAQ toggles, and preview form behavior
-- `assets/`: generated bitmap placeholders, cropped swatches, and WebP delivery copies
+- `assets/`: generated bitmap placeholders, cropped swatches, clean hero texture, social preview card, and WebP delivery copies
 - `assets/logo-dark.png`: cropped working logo for dark backgrounds
 - `assets/logo-light.png`: cropped working logo for light backgrounds
 - `assets/logo-transparent.png`: cleaned working logo for website placement

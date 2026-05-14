@@ -237,19 +237,16 @@ textarea {
 .hero-media {
   background:
     image-set(
-      url("assets/hero-garage.webp") type("image/webp"),
-      url("assets/hero-garage.png") type("image/png")
+      url("assets/hero-clean-texture.webp") type("image/webp"),
+      url("assets/hero-clean-texture.png") type("image/png")
     )
-    right center / min(68vw, 980px) auto no-repeat;
-  opacity: 0.46;
-  transform: scale(1.01);
+    center bottom / cover no-repeat;
 }
 
 .hero-overlay {
   background:
-    radial-gradient(circle at 78% 48%, rgba(22, 124, 147, 0.12), transparent 28%),
-    linear-gradient(90deg, rgba(17, 22, 20, 0.96) 0%, rgba(17, 22, 20, 0.9) 42%, rgba(17, 22, 20, 0.6) 100%),
-    linear-gradient(0deg, rgba(17, 22, 20, 0.62), rgba(17, 22, 20, 0.18));
+    linear-gradient(90deg, rgba(17, 22, 20, 0.7) 0%, rgba(17, 22, 20, 0.48) 48%, rgba(17, 22, 20, 0.22) 100%),
+    linear-gradient(0deg, rgba(17, 22, 20, 0.42), rgba(17, 22, 20, 0.12));
 }
 
 .hero-inner {
@@ -263,15 +260,13 @@ textarea {
 .hero-logo-plate {
   width: fit-content;
   display: block;
-  padding: 10px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: rgba(17, 22, 20, 0.72);
-  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.28);
+  padding: 0;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.44));
 }
 
 .hero-logo {
-  width: min(300px, 72vw);
+  display: block;
+  width: min(326px, 74vw);
   height: auto;
 }
 
@@ -1092,15 +1087,14 @@ textarea:focus {
   }
 
   .hero-media {
-    background-position: right top;
-    background-size: 136vw auto;
-    opacity: 0.28;
+    background-position: center bottom;
+    background-size: cover;
   }
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(17, 22, 20, 0.96), rgba(17, 22, 20, 0.86)),
-      linear-gradient(0deg, rgba(17, 22, 20, 0.56), rgba(17, 22, 20, 0.32));
+      linear-gradient(90deg, rgba(17, 22, 20, 0.82), rgba(17, 22, 20, 0.62)),
+      linear-gradient(0deg, rgba(17, 22, 20, 0.5), rgba(17, 22, 20, 0.2));
   }
 
   .hero h1 {
