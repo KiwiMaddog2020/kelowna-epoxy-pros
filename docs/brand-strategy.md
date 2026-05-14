@@ -41,7 +41,7 @@ Use a calm, capable, local voice.
 ## Visual Identity
 
 - Base: graphite, white, warm concrete
-- Accent: copper and signal blue used sparingly
+- Accent: deep teal used sparingly
 - Feel: bold contractor mark, grounded layout, tidy copy, slightly industrial finish detail
 - Shapes: squared details, 8px radii or less, strong grid alignment
 - Logo direction: use the dark-background logo on dark sections and the white-background logo on light sections until a transparent master file exists
