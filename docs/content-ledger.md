@@ -21,12 +21,12 @@ Use this file to replace placeholders before launch.
 | Field | Current Preview Copy | Replace With |
 | --- | --- | --- |
 | Brand | Kelowna Epoxy Pros | Confirm final public name |
-| Phone | (250) 555-0148 | Public phone |
-| Email | quotes@kelownaepoxypros.example | Public email |
+| Phone | Direct phone coming soon | Public phone |
+| Email | Quote inbox coming soon | Public email |
 | Address | Kelowna, BC | Confirmed service area wording |
 | Warranty | Written care guidance | Confirmed warranty language |
 | Testimonials | Process-based trust content | Real customer quotes |
-| Images | Generated finish placeholders | Jeff's real job photos |
+| Images | Generated finish placeholders plus optimized WebP copies | Jeff's real job photos |
 | Logo | Supplied PNG logos | Transparent logo or vector master if available |
 
 ## Photo Shot List

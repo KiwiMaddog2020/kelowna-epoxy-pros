@@ -42,6 +42,10 @@ img {
   max-width: 100%;
 }
 
+main section[id] {
+  scroll-margin-top: calc(var(--header-height) + 18px);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -229,7 +233,12 @@ textarea {
 }
 
 .hero-media {
-  background: url("assets/hero-garage.png") center / cover no-repeat;
+  background:
+    image-set(
+      url("assets/hero-garage.webp") type("image/webp"),
+      url("assets/hero-garage.png") type("image/png")
+    )
+    center / cover no-repeat;
   transform: scale(1.01);
 }
 
@@ -456,9 +465,15 @@ textarea {
   box-shadow: 0 14px 28px rgba(17, 22, 20, 0.06);
 }
 
+.service-card picture {
+  display: block;
+  aspect-ratio: 1.18;
+  overflow: hidden;
+}
+
 .service-card img {
   width: 100%;
-  aspect-ratio: 1.18;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -598,9 +613,15 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.finish-preview picture {
+  display: block;
+  aspect-ratio: 1.28;
+  overflow: hidden;
+}
+
 .finish-preview img {
   width: 100%;
-  aspect-ratio: 1.28;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -633,6 +654,10 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.compare picture {
+  display: contents;
+}
+
 .compare-img {
   position: absolute;
   inset: 0;
@@ -663,6 +688,10 @@ textarea {
   height: 100%;
   opacity: 0;
   cursor: ew-resize;
+}
+
+.compare:has(.compare-range:focus-visible) {
+  box-shadow: var(--shadow), var(--focus);
 }
 
 .compare-labels {
@@ -805,9 +834,15 @@ textarea {
 
 .quote-section {
   padding: 108px 0;
-  background:
+  background-image:
     linear-gradient(120deg, rgba(21, 26, 25, 0.96), rgba(34, 43, 41, 0.92)),
-    url("assets/finish-flake.png") center / cover;
+    image-set(
+      url("assets/finish-flake.webp") type("image/webp"),
+      url("assets/finish-flake.png") type("image/png")
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--white);
 }
 
@@ -975,7 +1010,7 @@ textarea:focus {
 
 @media (max-width: 1080px) {
   .hero h1 {
-    font-size: 58px;
+    font-size: 50px;
   }
 
   .service-grid,
