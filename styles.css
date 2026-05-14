@@ -351,42 +351,6 @@ textarea {
   background: rgba(255, 255, 255, 0.18);
 }
 
-.trust-strip {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: rgba(17, 22, 20, 0.36);
-  backdrop-filter: blur(10px);
-}
-
-.trust-strip div {
-  padding: 16px;
-  border-right: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.trust-strip div:last-child {
-  border-right: 0;
-}
-
-.trust-strip dt {
-  margin: 0 0 4px;
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.trust-strip dd {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 850;
-}
-
 .intro-band {
   background: var(--graphite);
   color: var(--white);
@@ -400,18 +364,19 @@ textarea {
 .intro-grid {
   min-height: 172px;
   display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(480px, 1.06fr);
-  align-items: center;
-  gap: 28px;
+  place-items: center;
+  padding: 34px 0;
+  text-align: center;
 }
 
 .intro-copy {
   display: grid;
+  justify-items: center;
   gap: 16px;
 }
 
 .intro-grid p {
-  max-width: 820px;
+  max-width: 760px;
   margin: 0;
   color: rgba(255, 255, 255, 0.84);
   font-size: 21px;
@@ -1111,21 +1076,7 @@ textarea:focus {
     font-size: 18px;
   }
 
-  .trust-strip {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .trust-strip div:nth-child(2) {
-    border-right: 0;
-  }
-
-  .trust-strip div:nth-child(-n + 2) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  }
-
   .intro-grid {
-    grid-template-columns: 1fr;
-    align-items: start;
     padding: 28px 0;
     gap: 16px;
   }
@@ -1176,21 +1127,10 @@ textarea:focus {
     width: 100%;
   }
 
-  .trust-strip,
   .service-grid,
   .proof-list,
   .form-grid {
     grid-template-columns: 1fr;
-  }
-
-  .trust-strip div,
-  .trust-strip div:nth-child(2) {
-    border-right: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  }
-
-  .trust-strip div:last-child {
-    border-bottom: 0;
   }
 
   .process-list li {
