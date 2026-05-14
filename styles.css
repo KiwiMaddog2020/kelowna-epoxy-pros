@@ -1057,7 +1057,13 @@ textarea:focus {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(260px, 0.85fr);
   align-items: center;
+  justify-items: center;
   gap: 28px;
+  text-align: center;
+}
+
+.footer-brand {
+  justify-content: center;
 }
 
 .footer-logo-wrap {
@@ -1077,6 +1083,8 @@ textarea:focus {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 6px;
 }
 
@@ -1095,6 +1103,8 @@ textarea:focus {
 }
 
 .footer-note {
+  max-width: 380px;
+  justify-self: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
 }
@@ -1217,6 +1227,7 @@ textarea:focus {
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 }
 
